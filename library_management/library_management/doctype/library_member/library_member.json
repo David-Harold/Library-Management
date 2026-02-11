@@ -1,56 +1,50 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format: BOOK-.#####",
- "creation": "2026-02-09 16:43:53.319110",
+ "autoname": "format:MEM-{####}",
+ "creation": "2026-02-11 14:44:16.617411",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "title",
-  "isbn",
-  "status",
-  "publisher",
-  "publication_date"
+  "first_name",
+  "last_name",
+  "email",
+  "phone"
  ],
  "fields": [
   {
-   "fieldname": "title",
+   "fieldname": "first_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Title",
+   "label": "First Name ",
    "reqd": 1
   },
   {
-   "fieldname": "isbn",
+   "fieldname": "last_name",
    "fieldtype": "Data",
-   "label": "ISBN"
+   "label": "Last Name "
   },
   {
-   "default": "0",
-   "fieldname": "status",
-   "fieldtype": "Check",
-   "label": "Status",
-   "options": "Available\n \nRented\n\nLost"
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "reqd": 1
   },
   {
-   "fieldname": "publisher",
+   "fieldname": "phone",
    "fieldtype": "Data",
-   "label": "Publisher"
-  },
-  {
-   "fieldname": "publication_date",
-   "fieldtype": "Data",
-   "label": "Publication Date"
+   "label": "Phone"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-09 16:48:45.966105",
+ "modified": "2026-02-11 15:37:42.738545",
  "modified_by": "Administrator",
  "module": "Library Management",
- "name": "Books",
- "naming_rule": "Expression (old style)",
+ "name": "Library Member",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
